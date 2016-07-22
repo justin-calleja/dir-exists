@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/dir-exists.png?downloads=true)](https://nodei.co/npm/dir-exists/)
+[![NPM](https://nodei.co/npm/@justinc/dir-exists.png?downloads=true)](https://nodei.co/npm/@justinc/dir-exists/)
 
 ```js
 var dirExists = require('@justinc/dir-exists').dirExists;
