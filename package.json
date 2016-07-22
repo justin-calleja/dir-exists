@@ -1,0 +1,20 @@
+{
+  "name": "@justinc/dir-exists",
+  "version": "1.0.0",
+  "description": "Synchronously checks if a directory exists or not",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "directory",
+    "exists",
+    "fs",
+    "isDirectory",
+    "is-directory"
+  ],
+  "author": "Justin Calleja <calleja.justin@gmail.com>",
+  "license": "ISC"
+}
