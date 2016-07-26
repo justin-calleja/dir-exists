@@ -15,6 +15,10 @@
     "isDirectory",
     "is-directory"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin-calleja/dir-exists.git"
+  },
   "author": "Justin Calleja <calleja.justin@gmail.com>",
   "license": "ISC"
 }

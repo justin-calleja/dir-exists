@@ -15,19 +15,19 @@ module.exports = {
   },
 
   dirExists: function (dirPath, cb) {
+    if(!cb) {
+      throw new Error('Missing callback(err, result) in dirExists. Nothing to handle result.');
+    }
     if (!dirPath) {
-      cb(null, false);
-      return;
+      return cb(null, false);
     }
 
     fs.stat(dirPath, function (err, stats) {
       if (err) {
         if (err.code === 'ENOENT') {
-          cb(null, false);
-          return;
+          return cb(null, false);
         }
-        cb(err);
-        return;
+        return cb(err);
       }
 
       cb(null, stats.isDirectory());
