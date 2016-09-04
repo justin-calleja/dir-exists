@@ -3,10 +3,12 @@
 ```js
 var dirExists = require('@justinc/dir-exists').dirExists;
 var dirExistsSync = require('@justinc/dir-exists').dirExistsSync;
+var dirExistsAsPromised = require('@justinc/dir-exists').dirExistsAsPromised;
 
-console.log(dirExistsSync('/some/path/to/dir'));
-console.log(dirExists('/some/path/to/dir'), (err, exists) => {
+console.log('sync:', dirExistsSync('/some/path/to/dir'));
+console.log(dirExists('/some/path/to/dir', (err, exists) => {
   if (err) throw err;
-  console.log(exists);
-});
+  console.log('async:', exists);
+}));
+dirExistsAsPromised('/some/path/to/dir').then(exists => console.log('promise:', exists));
 ```
